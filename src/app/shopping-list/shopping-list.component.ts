@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {Ingredient} from '../shared/ingredient.model';
 import {ShoppingListService} from './shopping-list.service';
+import {Ingredient} from '../shared/ingredient.model';
 import {Subscription} from 'rxjs/Subscription';
 
 @Component({
@@ -27,5 +27,4 @@ export class ShoppingListComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
-
 }
